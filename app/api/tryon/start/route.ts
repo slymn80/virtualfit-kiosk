@@ -86,6 +86,7 @@ async function processJob(jobId: string, personPhotoUrl: string, garmentImageUrl
   }
 
   const result = await stream.done();
+  const falRequestId = stream.requestId;
 
   console.log("[Fal.ai] FULL RESULT:", JSON.stringify(result, null, 2));
 
@@ -103,7 +104,7 @@ async function processJob(jobId: string, personPhotoUrl: string, garmentImageUrl
 
   await db.tryOnJob.update({
     where: { id: jobId },
-    data: { status: "COMPLETED", completedAt: new Date() },
+    data: { status: "COMPLETED", completedAt: new Date(), n8nJobId: falRequestId ?? null },
   });
 
   console.log(`[Fal.ai] Job ${jobId} completed with ${imageUrls.length} pose(s)`);
