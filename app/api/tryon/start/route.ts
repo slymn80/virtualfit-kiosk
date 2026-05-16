@@ -78,9 +78,6 @@ async function processJob(jobId: string, personPhotoUrl: string, garmentImageUrl
       aspect_ratio: "2:3",
       preserve_pose: true,
     },
-    headers: {
-      "x-fal-object-lifecycle-preference": JSON.stringify({ expiration_duration_seconds: 604800 }),
-    },
   });
 
   let lastEvent: unknown;
