@@ -2,23 +2,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Cormorant_Garamond, Jost } from "next/font/google";
+import { LocaleHtml } from "@/components/LocaleHtml";
 import { locales } from "@/i18n";
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin", "latin-ext", "cyrillic"],
-  weight: ["300", "400", "500"],
-  style: ["normal", "italic"],
-  variable: "--font-display",
-  display: "swap",
-});
-
-const jost = Jost({
-  subsets: ["latin", "latin-ext", "cyrillic"],
-  weight: ["200", "300", "400", "500", "600"],
-  variable: "--font-body",
-  display: "swap",
-});
 
 export const dynamic = "force-dynamic";
 
@@ -38,13 +23,10 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${cormorant.variable} ${jost.variable}`} suppressHydrationWarning>
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <LocaleHtml locale={locale} />
+      {children}
+    </NextIntlClientProvider>
   );
 }
 
