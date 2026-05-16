@@ -19,6 +19,8 @@ export default function AdminSettingsPage() {
   const [saved, setSaved] = useState(false);
   const [testing, setTesting] = useState(false);
   const [testResult, setTestResult] = useState<string | null>(null);
+  const [cleaning, setCleaning] = useState(false);
+  const [cleanResult, setCleanResult] = useState<{ deleted: number; skipped: number; failed: number } | null>(null);
 
   useEffect(() => {
     fetch(`/api/admin/settings?storeId=${STOREDEFAULT}`)
@@ -40,6 +42,19 @@ export default function AdminSettingsPage() {
       setTimeout(() => setSaved(false), 3000);
     } finally {
       setSaving(false);
+    }
+  }
+
+  async function handleFalCleanup() {
+    if (!confirm("fal.ai'daki tüm try-on görselleri silinecek. Emin misiniz?")) return;
+    setCleaning(true);
+    setCleanResult(null);
+    try {
+      const res = await fetch("/api/admin/fal-cleanup", { method: "POST" });
+      const data = await res.json();
+      setCleanResult(data);
+    } finally {
+      setCleaning(false);
     }
   }
 
@@ -172,6 +187,29 @@ export default function AdminSettingsPage() {
               onChange={(v) => setSettings({ ...settings, autoDeleteMinutes: parseInt(v) || 30 })}
               type="number"
             />
+          </div>
+        </section>
+
+        {/* Storage Cleanup */}
+        <section className="bg-gray-900 border border-white/10 rounded-xl p-6">
+          <h2 className="text-white font-semibold mb-1">fal.ai Storage Cleanup</h2>
+          <p className="text-white/40 text-xs mb-4">
+            Deletes all stored try-on output images from fal.ai CDN. New photos auto-expire after 1 day.
+          </p>
+          <div className="flex items-center gap-4">
+            <button
+              onClick={handleFalCleanup}
+              disabled={cleaning}
+              className="px-4 py-2 border border-red-500/40 text-red-400 rounded-lg text-sm hover:border-red-500/70 disabled:opacity-40"
+            >
+              {cleaning ? "Deleting..." : "Delete All fal.ai Storage"}
+            </button>
+            {cleanResult && (
+              <span className="text-sm text-white/60">
+                {cleanResult.deleted} deleted · {cleanResult.skipped} already gone
+                {cleanResult.failed > 0 && <span className="text-red-400"> · {cleanResult.failed} failed</span>}
+              </span>
+            )}
           </div>
         </section>
 
