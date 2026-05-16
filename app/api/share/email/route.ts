@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
     }
 
     const resend = new Resend(apiKey);
-    const from = process.env.RESEND_FROM_EMAIL ?? "VirtualFit <noreply@virtualfit.io>";
+    const from = process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev";
 
     const { error } = await resend.emails.send({
       from,
