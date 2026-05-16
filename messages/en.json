@@ -1,0 +1,156 @@
+{
+  "welcome": {
+    "title": "Virtual Try-On",
+    "subtitle": "Try any outfit on yourself in seconds with AI",
+    "cta": "Touch to Start",
+    "selectLanguage": "Select Language"
+  },
+  "language": {
+    "title": "Choose your language",
+    "en": "English",
+    "tr": "Türkçe",
+    "ru": "Русский",
+    "kk": "Қазақша"
+  },
+  "name": {
+    "title": "What's your name?",
+    "subtitle": "We'll personalize your experience",
+    "placeholder": "Enter your first name",
+    "continue": "Continue",
+    "errorMin": "Name must be at least 2 characters",
+    "errorMax": "Name must be under 30 characters"
+  },
+  "consent": {
+    "title": "Your Privacy Matters",
+    "point1": "Your photo is used only for this session",
+    "point2": "Generated images are temporary",
+    "point3": "Delete everything before you leave",
+    "point4": "We do not share or sell your data",
+    "agree": "I Agree — Let's Start",
+    "back": "Back"
+  },
+  "camera": {
+    "title": "Take your photo",
+    "guide": "Stand inside the frame — show your full body",
+    "takePhoto": "Take Photo",
+    "stayStill": "Stay still...",
+    "cancel": "Cancel",
+    "usePhoto": "Use this photo?",
+    "confirm": "Yes, use this photo",
+    "retake": "Retake",
+    "errorPermission": "Camera permission denied. Please allow camera access.",
+    "errorNotFound": "No camera found. Please connect a camera.",
+    "hintFullBody": "Full body",
+    "hintFace": "Face visible",
+    "hintCenter": "Centered",
+    "hintLight": "Good lighting"
+  },
+  "gender": {
+    "title": "Who's shopping today?",
+    "subtitle": "Select a category to see matching styles",
+    "women": "Women",
+    "womenSub": "Dresses, tops, jackets and more",
+    "men": "Men",
+    "menSub": "Shirts, suits, jackets and more",
+    "children": "Children",
+    "childrenSub": "Kids clothing & sets"
+  },
+  "categories": {
+    "title": "Choose a category",
+    "subtitle": "What would you like to try on?",
+    "back": "Back",
+    "noCategories": "No categories available"
+  },
+  "products": {
+    "title": "Select an item to try on",
+    "back": "Back",
+    "tryOn": "Try On",
+    "noProducts": "No products available",
+    "loadMore": "Load more"
+  },
+  "generating": {
+    "title": "Creating your virtual look",
+    "subtitle": "Our AI is styling you now",
+    "almostThere": "Almost there...",
+    "step1": "Uploading your photo",
+    "step2": "Preparing AI model",
+    "step3": "Dressing virtual model",
+    "step4": "Creating fashion poses",
+    "step5": "Finalizing your looks",
+    "step6": "Ready!",
+    "retrying": "Retrying...",
+    "failed": "Generation failed",
+    "tryAgain": "Try Again",
+    "startOver": "Start Over"
+  },
+  "results": {
+    "title": "{name}'s looks",
+    "pose1": "Standing",
+    "pose2": "Walking",
+    "pose3": "Side view",
+    "pose4": "Three-quarter",
+    "tryAnother": "Try Another",
+    "share": "Share & Send",
+    "delete": "Delete Session",
+    "finish": "Finish",
+    "noResults": "No results available"
+  },
+  "share": {
+    "title": "Send your looks",
+    "email": "Send to Email",
+    "whatsapp": "Send via WhatsApp",
+    "telegram": "Send via Telegram",
+    "qrCode": "Scan QR Code",
+    "qrSubtitle": "Valid for 24 hours",
+    "emailPlaceholder": "Enter your email",
+    "send": "Send",
+    "sending": "Sending...",
+    "sent": "Sent! Check your inbox.",
+    "error": "Failed to send. Try again.",
+    "deleteSession": "Delete My Session"
+  },
+  "end": {
+    "title": "Thank you, {name}!",
+    "subtitle": "Your virtual fitting session is complete.",
+    "deleteNow": "Delete my data now",
+    "autoDelete": "Session auto-deletes in",
+    "newSession": "Start New Session",
+    "deleteConfirmTitle": "Delete your session?",
+    "deleteConfirmMsg": "All photos and generated images will be permanently deleted.",
+    "deleteConfirm": "Yes, delete everything",
+    "deleteCancel": "Cancel"
+  },
+  "common": {
+    "back": "Back",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "deleteSession": "Delete Session",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "homeConfirmTitle": "Return to home?",
+    "homeConfirmMessage": "Your current session progress will be lost.",
+    "homeConfirmYes": "Yes, go home",
+    "homeConfirmNo": "Stay here"
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "products": "Products",
+    "categories": "Categories",
+    "settings": "Settings",
+    "addProduct": "Add Product",
+    "productName": "Product Name",
+    "brand": "Brand",
+    "color": "Color",
+    "category": "Category",
+    "garmentImageUrl": "Garment Image URL",
+    "thumbnailUrl": "Thumbnail URL",
+    "save": "Save",
+    "saving": "Saving...",
+    "saved": "Saved!",
+    "n8nWebhookUrl": "n8n Webhook URL",
+    "n8nWebhookSecret": "Webhook Secret",
+    "storeSettings": "Store Settings",
+    "sessionTimeout": "Session Timeout (minutes)",
+    "autoDelete": "Auto-Delete After (minutes)"
+  }
+}

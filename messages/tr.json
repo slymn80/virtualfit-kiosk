@@ -1,0 +1,156 @@
+{
+  "welcome": {
+    "title": "Sanal Deneme",
+    "subtitle": "Yapay zeka ile saniyeler içinde herhangi bir kıyafeti kendinize göre deneyin",
+    "cta": "Başlamak için dokunun",
+    "selectLanguage": "Dil Seçin"
+  },
+  "language": {
+    "title": "Dilinizi seçin",
+    "en": "English",
+    "tr": "Türkçe",
+    "ru": "Русский",
+    "kk": "Қазақша"
+  },
+  "name": {
+    "title": "Adınız ne?",
+    "subtitle": "Deneyiminizi kişiselleştireceğiz",
+    "placeholder": "Adınızı girin",
+    "continue": "Devam",
+    "errorMin": "Ad en az 2 karakter olmalıdır",
+    "errorMax": "Ad 30 karakterden kısa olmalıdır"
+  },
+  "consent": {
+    "title": "Gizliliğiniz Önemlidir",
+    "point1": "Fotoğrafınız yalnızca bu oturum için kullanılır",
+    "point2": "Oluşturulan görseller geçicidir",
+    "point3": "Ayrılmadan önce her şeyi silin",
+    "point4": "Verilerinizi paylaşmıyor veya satmıyoruz",
+    "agree": "Kabul Ediyorum — Başlayalım",
+    "back": "Geri"
+  },
+  "camera": {
+    "title": "Fotoğrafınızı çekin",
+    "guide": "Çerçevenin içinde durun — tüm vücudunuzu gösterin",
+    "takePhoto": "Fotoğraf Çek",
+    "stayStill": "Kıpırdamayın...",
+    "cancel": "İptal",
+    "usePhoto": "Bu fotoğrafı kullan?",
+    "confirm": "Evet, bu fotoğrafı kullan",
+    "retake": "Yeniden Çek",
+    "errorPermission": "Kamera izni reddedildi. Lütfen kamera erişimine izin verin.",
+    "errorNotFound": "Kamera bulunamadı. Lütfen bir kamera bağlayın.",
+    "hintFullBody": "Tam boy",
+    "hintFace": "Yüz görünür",
+    "hintCenter": "Ortalanmış",
+    "hintLight": "İyi aydınlatma"
+  },
+  "gender": {
+    "title": "Bugün kim alışveriş yapıyor?",
+    "subtitle": "Uygun stilleri görmek için kategori seçin",
+    "women": "Kadın",
+    "womenSub": "Elbiseler, üstler, ceketler ve daha fazlası",
+    "men": "Erkek",
+    "menSub": "Gömlekler, takımlar, ceketler ve daha fazlası",
+    "children": "Çocuk",
+    "childrenSub": "Çocuk giyim ve takımlar"
+  },
+  "categories": {
+    "title": "Bir kategori seçin",
+    "subtitle": "Ne denemek istersiniz?",
+    "back": "Geri",
+    "noCategories": "Kategori bulunamadı"
+  },
+  "products": {
+    "title": "Denemek için bir ürün seçin",
+    "back": "Geri",
+    "tryOn": "Dene",
+    "noProducts": "Ürün bulunamadı",
+    "loadMore": "Daha fazla yükle"
+  },
+  "generating": {
+    "title": "Sanal görünümünüz oluşturuluyor",
+    "subtitle": "Yapay zekamız şu anda sizi şekillendiriyor",
+    "almostThere": "Neredeyse hazır...",
+    "step1": "Fotoğrafınız yükleniyor",
+    "step2": "Yapay zeka modeli hazırlanıyor",
+    "step3": "Sanal model giyindiriliyor",
+    "step4": "Moda pozları oluşturuluyor",
+    "step5": "Görünümleriniz tamamlanıyor",
+    "step6": "Hazır!",
+    "retrying": "Yeniden deneniyor...",
+    "failed": "Oluşturma başarısız",
+    "tryAgain": "Tekrar Dene",
+    "startOver": "Baştan Başla"
+  },
+  "results": {
+    "title": "{name}'in görünümleri",
+    "pose1": "Ayakta",
+    "pose2": "Yürürken",
+    "pose3": "Yan profil",
+    "pose4": "Üç çeyrek",
+    "tryAnother": "Başka Dene",
+    "share": "Paylaş & Gönder",
+    "delete": "Oturumu Sil",
+    "finish": "Bitir",
+    "noResults": "Sonuç bulunamadı"
+  },
+  "share": {
+    "title": "Görünümlerinizi gönderin",
+    "email": "E-posta ile gönder",
+    "whatsapp": "WhatsApp ile gönder",
+    "telegram": "Telegram ile gönder",
+    "qrCode": "QR Kodu Tara",
+    "qrSubtitle": "24 saat geçerlidir",
+    "emailPlaceholder": "E-postanızı girin",
+    "send": "Gönder",
+    "sending": "Gönderiliyor...",
+    "sent": "Gönderildi! Gelen kutunuzu kontrol edin.",
+    "error": "Gönderilemedi. Tekrar deneyin.",
+    "deleteSession": "Oturumumu Sil"
+  },
+  "end": {
+    "title": "Teşekkürler, {name}!",
+    "subtitle": "Sanal deneme oturumunuz tamamlandı.",
+    "deleteNow": "Verilerimi şimdi sil",
+    "autoDelete": "Oturum otomatik silinecek",
+    "newSession": "Yeni Oturum Başlat",
+    "deleteConfirmTitle": "Oturumunuzu sil?",
+    "deleteConfirmMsg": "Tüm fotoğraflar ve oluşturulan görseller kalıcı olarak silinecek.",
+    "deleteConfirm": "Evet, her şeyi sil",
+    "deleteCancel": "İptal"
+  },
+  "common": {
+    "back": "Geri",
+    "cancel": "İptal",
+    "confirm": "Onayla",
+    "deleteSession": "Oturumu Sil",
+    "loading": "Yükleniyor...",
+    "error": "Bir şeyler yanlış gitti",
+    "homeConfirmTitle": "Ana sayfaya dön?",
+    "homeConfirmMessage": "Mevcut oturum ilerlemeniz kaybolacak.",
+    "homeConfirmYes": "Evet, ana sayfaya git",
+    "homeConfirmNo": "Burada kal"
+  },
+  "admin": {
+    "title": "Yönetim Paneli",
+    "products": "Ürünler",
+    "categories": "Kategoriler",
+    "settings": "Ayarlar",
+    "addProduct": "Ürün Ekle",
+    "productName": "Ürün Adı",
+    "brand": "Marka",
+    "color": "Renk",
+    "category": "Kategori",
+    "garmentImageUrl": "Kıyafet Görsel URL",
+    "thumbnailUrl": "Küçük Resim URL",
+    "save": "Kaydet",
+    "saving": "Kaydediliyor...",
+    "saved": "Kaydedildi!",
+    "n8nWebhookUrl": "n8n Webhook URL",
+    "n8nWebhookSecret": "Webhook Gizli Anahtarı",
+    "storeSettings": "Mağaza Ayarları",
+    "sessionTimeout": "Oturum Süresi (dakika)",
+    "autoDelete": "Otomatik Silme (dakika)"
+  }
+}

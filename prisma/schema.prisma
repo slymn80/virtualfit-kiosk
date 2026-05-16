@@ -1,0 +1,245 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Company {
+  id           String      @id @default(cuid())
+  name         String
+  slug         String      @unique
+  logoUrl      String?
+  contactEmail String
+  isActive     Boolean     @default(true)
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  adminUsers   AdminUser[]
+  stores       Store[]
+
+  @@map("companies")
+}
+
+model Store {
+  id                String             @id @default(cuid())
+  companyId         String
+  name              String
+  slug              String
+  address           String?
+  city              String?
+  country           String             @default("KZ")
+  logoUrl           String?
+  brandColor        String             @default("#000000")
+  defaultLanguage   String             @default("en")
+  n8nWebhookUrl     String?
+  n8nWebhookSecret  String?
+  sessionTtlMinutes Int                @default(60)
+  autoDeleteMinutes Int                @default(30)
+  requireConsent    Boolean            @default(true)
+  isActive          Boolean            @default(true)
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+  sessions          CustomerSession[]
+  devices           KioskDevice[]
+  languageSettings  LanguageSettings[]
+  productCategories ProductCategory[]
+  products          Product[]
+  company           Company            @relation(fields: [companyId], references: [id])
+
+  @@map("stores")
+}
+
+model KioskDevice {
+  id         String            @id @default(cuid())
+  storeId    String
+  name       String
+  deviceCode String            @unique
+  status     String            @default("OFFLINE")
+  lastSeenAt DateTime?
+  isActive   Boolean           @default(true)
+  createdAt  DateTime          @default(now())
+  updatedAt  DateTime          @updatedAt
+  sessions   CustomerSession[]
+  settings   DeviceSettings?
+  store      Store             @relation(fields: [storeId], references: [id])
+
+  @@map("kiosk_devices")
+}
+
+model DeviceSettings {
+  id               String      @id @default(cuid())
+  deviceId         String      @unique
+  countdownSeconds Int         @default(10)
+  showSilhouette   Boolean     @default(true)
+  enableAudio      Boolean     @default(false)
+  volume           Int         @default(70)
+  idleTimeoutSec   Int         @default(120)
+  updatedAt        DateTime    @updatedAt
+  device           KioskDevice @relation(fields: [deviceId], references: [id])
+
+  @@map("device_settings")
+}
+
+model ProductCategory {
+  id        String    @id @default(cuid())
+  storeId   String
+  name      String
+  nameEn    String?
+  nameTr    String?
+  nameRu    String?
+  nameKk    String?
+  gender    String    @default("women")
+  imageUrl  String?
+  sortOrder Int       @default(0)
+  isActive  Boolean   @default(true)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  store     Store     @relation(fields: [storeId], references: [id])
+  products  Product[]
+
+  @@map("product_categories")
+}
+
+model Product {
+  id              String           @id @default(cuid())
+  storeId         String
+  categoryId      String?
+  name            String
+  nameEn          String?
+  nameTr          String?
+  nameRu          String?
+  nameKk          String?
+  gender          String           @default("women")
+  brand           String?
+  color           String?
+  garmentImageUrl String
+  thumbnailUrl    String?
+  isActive        Boolean          @default(true)
+  sortOrder       Int              @default(0)
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  code            String?
+  category        ProductCategory? @relation(fields: [categoryId], references: [id])
+  store           Store            @relation(fields: [storeId], references: [id])
+  tryOnJobs       TryOnJob[]
+
+  @@map("products")
+}
+
+model CustomerSession {
+  id           String       @id @default(cuid())
+  storeId      String
+  deviceId     String?
+  customerName String
+  language     String       @default("en")
+  consentGiven Boolean      @default(false)
+  consentAt    DateTime?
+  photoUrl     String?
+  status       String       @default("ACTIVE")
+  expiresAt    DateTime
+  deletedAt    DateTime?
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  auditLogs    AuditLog[]
+  device       KioskDevice? @relation(fields: [deviceId], references: [id])
+  store        Store        @relation(fields: [storeId], references: [id])
+  shareLogs    ShareLog[]
+  tryOnJobs    TryOnJob[]
+
+  @@map("customer_sessions")
+}
+
+model TryOnJob {
+  id          String          @id @default(cuid())
+  sessionId   String
+  productId   String
+  status      String          @default("PENDING")
+  n8nJobId    String?
+  errorMsg    String?
+  retryCount  Int             @default(0)
+  queuedAt    DateTime        @default(now())
+  startedAt   DateTime?
+  completedAt DateTime?
+  failedAt    DateTime?
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+  product     Product         @relation(fields: [productId], references: [id])
+  session     CustomerSession @relation(fields: [sessionId], references: [id])
+  results     TryOnResult[]
+
+  @@map("tryon_jobs")
+}
+
+model TryOnResult {
+  id        String     @id @default(cuid())
+  jobId     String
+  poseIndex Int
+  imageUrl  String
+  createdAt DateTime   @default(now())
+  shareLogs ShareLog[]
+  job       TryOnJob   @relation(fields: [jobId], references: [id])
+
+  @@map("tryon_results")
+}
+
+model ShareLog {
+  id          String          @id @default(cuid())
+  sessionId   String
+  resultId    String?
+  shareMethod String
+  recipient   String?
+  shareToken  String          @unique @default(cuid())
+  shareUrl    String?
+  openedAt    DateTime?
+  openCount   Int             @default(0)
+  expiresAt   DateTime
+  createdAt   DateTime        @default(now())
+  result      TryOnResult?    @relation(fields: [resultId], references: [id])
+  session     CustomerSession @relation(fields: [sessionId], references: [id])
+
+  @@map("share_logs")
+}
+
+model AuditLog {
+  id        String           @id @default(cuid())
+  sessionId String?
+  action    String
+  actor     String
+  metadata  String?
+  ip        String?
+  createdAt DateTime         @default(now())
+  session   CustomerSession? @relation(fields: [sessionId], references: [id])
+
+  @@map("audit_logs")
+}
+
+model AdminUser {
+  id          String    @id @default(cuid())
+  email       String    @unique
+  name        String
+  role        String    @default("STORE_MANAGER")
+  companyId   String?
+  storeId     String?
+  password    String
+  isActive    Boolean   @default(true)
+  lastLoginAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  company     Company?  @relation(fields: [companyId], references: [id])
+
+  @@map("admin_users")
+}
+
+model LanguageSettings {
+  id             String   @id @default(cuid())
+  storeId        String
+  enabledLocales String   @default("en,tr,ru,kk")
+  defaultLocale  String   @default("en")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  store          Store    @relation(fields: [storeId], references: [id])
+
+  @@map("language_settings")
+}
