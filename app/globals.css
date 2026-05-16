@@ -22,12 +22,19 @@ html, body {
   overflow-x: hidden;
   background: var(--bg);
   color: var(--text);
+  font-family: var(--font-body), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   overscroll-behavior: none;
+}
+
+h1, h2 {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 300;
+  letter-spacing: 0.04em;
 }
 
 /* Kiosk-optimized tap highlight */
