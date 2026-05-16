@@ -65,7 +65,7 @@ async function main() {
       gender: "women",
       name: "Dresses",
       nameEn: "Dresses", nameTr: "Elbiseler", nameRu: "Платья", nameKk: "Көйлектер",
-      imageUrl: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=400&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1739773375246-621154fc080f?w=400&q=80",
       sortOrder: 0,
     },
     {
@@ -73,7 +73,7 @@ async function main() {
       gender: "women",
       name: "Tops & Blouses",
       nameEn: "Tops & Blouses", nameTr: "Üstler & Bluzlar", nameRu: "Топы и блузы", nameKk: "Жоғарғы киімдер",
-      imageUrl: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1777462985111-9da64fb2e6e6?w=400&q=80",
       sortOrder: 1,
     },
     {
@@ -81,7 +81,7 @@ async function main() {
       gender: "women",
       name: "Jackets & Coats",
       nameEn: "Jackets & Coats", nameTr: "Ceketler & Montlar", nameRu: "Куртки и пальто", nameKk: "Куртка және пальто",
-      imageUrl: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1695461569773-e7c75f38ac3b?w=400&q=80",
       sortOrder: 2,
     },
     {
@@ -89,7 +89,7 @@ async function main() {
       gender: "women",
       name: "Skirts & Pants",
       nameEn: "Skirts & Pants", nameTr: "Etekler & Pantolonlar", nameRu: "Юбки и брюки", nameKk: "Юбкалар мен шалбарлар",
-      imageUrl: "https://images.unsplash.com/photo-1619603364853-4f1c7b9e4e47?w=400&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1714143136372-ddaf8b606da7?w=400&q=80",
       sortOrder: 3,
     },
     // Men
@@ -98,7 +98,7 @@ async function main() {
       gender: "men",
       name: "Shirts & T-Shirts",
       nameEn: "Shirts & T-Shirts", nameTr: "Gömlekler & Tişörtler", nameRu: "Рубашки и футболки", nameKk: "Жейделер мен футболкалар",
-      imageUrl: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1761896902115-49793a359daf?w=400&q=80",
       sortOrder: 0,
     },
     {
@@ -106,7 +106,7 @@ async function main() {
       gender: "men",
       name: "Jackets & Coats",
       nameEn: "Jackets & Coats", nameTr: "Ceketler & Montlar", nameRu: "Куртки и пальто", nameKk: "Куртка және пальто",
-      imageUrl: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1598808503746-f34c53b9323e?w=400&q=80",
       sortOrder: 1,
     },
     {
@@ -114,7 +114,7 @@ async function main() {
       gender: "men",
       name: "Pants & Jeans",
       nameEn: "Pants & Jeans", nameTr: "Pantolonlar & Kotlar", nameRu: "Брюки и джинсы", nameKk: "Шалбарлар мен джинстар",
-      imageUrl: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1714143136372-ddaf8b606da7?w=400&q=80",
       sortOrder: 2,
     },
     {
@@ -122,7 +122,7 @@ async function main() {
       gender: "men",
       name: "Suits",
       nameEn: "Suits", nameTr: "Takım Elbiseler", nameRu: "Костюмы", nameKk: "Іскерлік киімдер",
-      imageUrl: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1585412459212-8def26f7e84c?w=400&q=80",
       sortOrder: 3,
     },
     // Children
@@ -131,7 +131,7 @@ async function main() {
       gender: "children",
       name: "Tops & T-Shirts",
       nameEn: "Tops & T-Shirts", nameTr: "Üstler & Tişörtler", nameRu: "Верх и футболки", nameKk: "Жоғарғы киімдер",
-      imageUrl: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1696086152504-4843b2106ab4?w=400&q=80",
       sortOrder: 0,
     },
     {
@@ -139,7 +139,7 @@ async function main() {
       gender: "children",
       name: "Dresses & Sets",
       nameEn: "Dresses & Sets", nameTr: "Elbiseler & Takımlar", nameRu: "Платья и комплекты", nameKk: "Көйлектер мен жиынтықтар",
-      imageUrl: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1739773375246-621154fc080f?w=400&q=80",
       sortOrder: 1,
     },
     {
@@ -147,7 +147,7 @@ async function main() {
       gender: "children",
       name: "Jackets & Outerwear",
       nameEn: "Jackets & Outerwear", nameTr: "Ceketler & Dış Giyim", nameRu: "Куртки и верхняя одежда", nameKk: "Сыртқы киімдер",
-      imageUrl: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1695461569773-e7c75f38ac3b?w=400&q=80",
       sortOrder: 2,
     },
   ];
@@ -171,8 +171,8 @@ async function main() {
       nameEn: "Floral Summer Dress", nameTr: "Çiçekli Yaz Elbisesi", nameRu: "Цветочное летнее платье", nameKk: "Гүлді жазғы көйлек",
       brand: "Zara",
       color: "Multicolor",
-      garmentImageUrl: "https://images.unsplash.com/photo-1612336307429-8a898d10e223?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1612336307429-8a898d10e223?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1739773375246-621154fc080f?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1739773375246-621154fc080f?w=300&q=80",
     },
     {
       id: "prod_w02",
@@ -182,8 +182,8 @@ async function main() {
       nameEn: "Red Evening Dress", nameTr: "Kırmızı Gece Elbisesi", nameRu: "Красное вечернее платье", nameKk: "Қызыл кешкі көйлек",
       brand: "Reserved",
       color: "Red",
-      garmentImageUrl: "https://images.unsplash.com/photo-1566479179817-44900ba70fa0?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1566479179817-44900ba70fa0?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1715607096614-6da1f59f04f1?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1715607096614-6da1f59f04f1?w=300&q=80",
     },
     {
       id: "prod_w03",
@@ -193,8 +193,8 @@ async function main() {
       nameEn: "White Classic Blouse", nameTr: "Beyaz Klasik Bluz", nameRu: "Белая классическая блуза", nameKk: "Ақ классикалық блузка",
       brand: "H&M",
       color: "White",
-      garmentImageUrl: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1777462985111-9da64fb2e6e6?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1777462985111-9da64fb2e6e6?w=300&q=80",
     },
     {
       id: "prod_w04",
@@ -204,8 +204,8 @@ async function main() {
       nameEn: "Navy Blue Blouse", nameTr: "Lacivert Bluz", nameRu: "Тёмно-синяя блуза", nameKk: "Қара-көк блузка",
       brand: "Mango",
       color: "Navy",
-      garmentImageUrl: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1441035844538-e2ce7dba066b?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1441035844538-e2ce7dba066b?w=300&q=80",
     },
     {
       id: "prod_w05",
@@ -215,8 +215,8 @@ async function main() {
       nameEn: "Beige Trench Coat", nameTr: "Bej Trençkot", nameRu: "Бежевый тренч", nameKk: "Бежевый тренч",
       brand: "Mango",
       color: "Beige",
-      garmentImageUrl: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1695461569773-e7c75f38ac3b?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1695461569773-e7c75f38ac3b?w=300&q=80",
     },
 
     // === MEN (5) ===
@@ -228,8 +228,8 @@ async function main() {
       nameEn: "White Oxford Shirt", nameTr: "Beyaz Oxford Gömlek", nameRu: "Белая оксфордская рубашка", nameKk: "Ақ оксфорд жейдесі",
       brand: "ZARA Man",
       color: "White",
-      garmentImageUrl: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1761896902115-49793a359daf?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1761896902115-49793a359daf?w=300&q=80",
     },
     {
       id: "prod_m02",
@@ -239,8 +239,8 @@ async function main() {
       nameEn: "Black Slim Turtleneck", nameTr: "Siyah Slim Balıkçı", nameRu: "Чёрная водолазка slim", nameKk: "Қара slim водолазка",
       brand: "Pull&Bear",
       color: "Black",
-      garmentImageUrl: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=300&q=80",
     },
     {
       id: "prod_m03",
@@ -250,8 +250,8 @@ async function main() {
       nameEn: "Black Leather Jacket", nameTr: "Siyah Deri Ceket", nameRu: "Чёрная кожаная куртка", nameKk: "Қара былғары куртка",
       brand: "Pull&Bear",
       color: "Black",
-      garmentImageUrl: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1598808503746-f34c53b9323e?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1598808503746-f34c53b9323e?w=300&q=80",
     },
     {
       id: "prod_m04",
@@ -261,8 +261,8 @@ async function main() {
       nameEn: "Slim Fit Blue Jeans", nameTr: "Slim Fit Mavi Kot", nameRu: "Синие джинсы slim fit", nameKk: "Slim fit көк джинс",
       brand: "Levi's",
       color: "Blue",
-      garmentImageUrl: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1714143136372-ddaf8b606da7?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1714143136372-ddaf8b606da7?w=300&q=80",
     },
     {
       id: "prod_m05",
@@ -272,8 +272,8 @@ async function main() {
       nameEn: "Charcoal Business Suit", nameTr: "Antrasit İş Takımı", nameRu: "Антрацитовый деловой костюм", nameKk: "Антрацит іскерлік костюм",
       brand: "Reserved",
       color: "Charcoal",
-      garmentImageUrl: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1585412459212-8def26f7e84c?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1585412459212-8def26f7e84c?w=300&q=80",
     },
 
     // === CHILDREN (5) ===
@@ -285,8 +285,8 @@ async function main() {
       nameEn: "Kids Striped T-Shirt", nameTr: "Çocuk Çizgili Tişört", nameRu: "Детская полосатая футболка", nameKk: "Балалар жолақты футболкасы",
       brand: "H&M Kids",
       color: "Blue/White",
-      garmentImageUrl: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1696086152504-4843b2106ab4?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1696086152504-4843b2106ab4?w=300&q=80",
     },
     {
       id: "prod_k02",
@@ -296,8 +296,8 @@ async function main() {
       nameEn: "Girls Floral Top", nameTr: "Kız Çocuk Çiçekli Üst", nameRu: "Детский цветочный топ", nameKk: "Қыздар гүлді үстіңгі киім",
       brand: "Zara Kids",
       color: "Pink",
-      garmentImageUrl: "https://images.unsplash.com/photo-1519457431-44ccd64a579b?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1519457431-44ccd64a579b?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1777462985111-9da64fb2e6e6?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1777462985111-9da64fb2e6e6?w=300&q=80",
     },
     {
       id: "prod_k03",
@@ -307,8 +307,8 @@ async function main() {
       nameEn: "Girls Summer Dress", nameTr: "Kız Çocuk Yaz Elbisesi", nameRu: "Детское летнее платье", nameKk: "Қыздар жазғы көйлегі",
       brand: "Reserved Kids",
       color: "Yellow",
-      garmentImageUrl: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1739773375246-621154fc080f?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1739773375246-621154fc080f?w=300&q=80",
     },
     {
       id: "prod_k04",
@@ -318,8 +318,8 @@ async function main() {
       nameEn: "Boys Tracksuit Set", nameTr: "Erkek Çocuk Eşofman Takımı", nameRu: "Детский спортивный костюм", nameKk: "Ұлдар спорт костюмі",
       brand: "Adidas Kids",
       color: "Navy",
-      garmentImageUrl: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1621198059871-0d5f9b449233?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1621198059871-0d5f9b449233?w=300&q=80",
     },
     {
       id: "prod_k05",
@@ -329,8 +329,8 @@ async function main() {
       nameEn: "Kids Puffer Jacket", nameTr: "Çocuk Şişme Mont", nameRu: "Детская куртка-пуховик", nameKk: "Балалар пуховик куртка",
       brand: "H&M Kids",
       color: "Red",
-      garmentImageUrl: "https://images.unsplash.com/photo-1467043198406-dc953a3defa0?w=600&q=80",
-      thumbnailUrl: "https://images.unsplash.com/photo-1467043198406-dc953a3defa0?w=300&q=80",
+      garmentImageUrl: "https://images.unsplash.com/photo-1695461569773-e7c75f38ac3b?w=600&q=80",
+      thumbnailUrl: "https://images.unsplash.com/photo-1695461569773-e7c75f38ac3b?w=300&q=80",
     },
   ];
 

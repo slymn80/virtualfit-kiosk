@@ -79,8 +79,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white flex">
-      <aside className="w-60 bg-gray-900 border-r border-white/10 flex flex-col">
+    <div className="h-screen bg-gray-950 text-white flex overflow-hidden">
+      <aside className="w-60 bg-gray-900 border-r border-white/10 flex flex-col flex-shrink-0">
         <div className="px-6 py-5 border-b border-white/10">
           <p className="text-white font-semibold text-lg">VirtualFit</p>
           <p className="text-white/40 text-xs">Admin Panel</p>
