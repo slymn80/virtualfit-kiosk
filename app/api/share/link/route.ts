@@ -17,7 +17,10 @@ export async function POST(req: NextRequest) {
 
     const host = req.headers.get("host") ?? "localhost:3000";
     const protocol = host.startsWith("localhost") ? "http" : "https";
-    const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? `${protocol}://${host}`;
+    const envUrl = process.env.NEXT_PUBLIC_APP_URL;
+    const appUrl = envUrl && !envUrl.includes("localhost")
+      ? envUrl.replace(/\/$/, "")
+      : `${protocol}://${host}`;
     const shareUrl = `${appUrl}/share/${shareLog.shareToken}`;
 
     await db.shareLog.update({
