@@ -59,7 +59,7 @@ async function processJob(jobId: string, personPhotoUrl: string, garmentImageUrl
     const base64Data = personPhotoUrl.replace(/^data:image\/\w+;base64,/, "");
     const buffer = Buffer.from(base64Data, "base64");
     const blob = new Blob([buffer], { type: "image/jpeg" });
-    falPersonUrl = await fal.storage.upload(new File([blob], "photo.jpg", { type: "image/jpeg" }));
+    falPersonUrl = await fal.storage.upload(new File([blob], "photo.jpg", { type: "image/jpeg" }), { lifecycle: { expiresIn: "1d" } });
   } else if (personPhotoUrl.startsWith("http")) {
     // Already an external URL (fal.ai CDN from photo/upload)
     falPersonUrl = personPhotoUrl;

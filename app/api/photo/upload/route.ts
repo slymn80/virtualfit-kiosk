@@ -16,7 +16,8 @@ export async function POST(req: NextRequest) {
 
     // Upload directly to fal.ai storage — works in any environment
     const photoUrl = await fal.storage.upload(
-      new File([blob], "photo.jpg", { type: "image/jpeg" })
+      new File([blob], "photo.jpg", { type: "image/jpeg" }),
+      { lifecycle: { expiresIn: "1d" } }
     );
 
     if (sessionId && sessionId !== "temp") {
